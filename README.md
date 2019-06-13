@@ -4,4 +4,10 @@ Grigora  is a library containing optimised implementation of common preprocessin
 
 The goal of this project is to offer ~5-20x speedup over original implementations by porting the original implementations to Cython modules.
 
+Grigora can be installed via PyPI as:
+
+```
+pip install grigora
+```
+
 Grigora is compatible with Python 2.7-3.7.

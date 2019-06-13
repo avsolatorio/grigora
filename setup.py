@@ -16,11 +16,13 @@ extensions = [
 here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, "README.md")).read()
 
-requires = ['numpy>=1.14.0']
+requires = [
+    'numpy>=1.16.0'
+]
 
 setup(
     name="grigora",
-    version="0.1",
+    version="0.0.3",
     description="Optimised implementation of common deep learning preprocessing utilities.",
     long_description=README,
     author="Aivin V. Solatorio",
@@ -49,3 +51,6 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
 )
+
+# python setup.py sdist bdist_wheel
+# twine upload dist/*tar.gz
